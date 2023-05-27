@@ -26,7 +26,7 @@ pipeline {
         }
         stage('build con Maven') {
             steps {
-                bat "mvn clean package -DskipTests"
+                bat "mvn clean package"
             } 
             post {
                 success {
